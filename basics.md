@@ -31,11 +31,11 @@
     
   A REST request from the client to the server usually consists of the following components
      
-  - URL Path [https://api.example.com/user]
-     HTTP Method [GET, PUT, POST, PATCH, DELETE]
-     Header – (optional) additional information that the client needs to pass along in the request such as Authorization credentials, Content-Type of the body, User-Agent to define what type of application is making the request, and more]
-     Parameters – (optional) variable fields that alter how the resource will be returned.
-     Body – (optional) contains data that needs to be sent to the server.
+  1. URL Path [https://api.example.com/user]
+  1. HTTP Method [GET, PUT, POST, PATCH, DELETE]
+  1. Header – (optional) additional information that the client needs to pass along in the request such as Authorization credentials, Content-Type of the body, User-Agent to define what type of application is making the request, and more]
+  1. Parameters – (optional) variable fields that alter how the resource will be returned.
+  1. Body – (optional) contains data that needs to be sent to the server.
     
 **API response** 
 ----------------
