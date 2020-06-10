@@ -49,6 +49,10 @@ A response from the server to the client usually consists of the following compo
   3. An empty line (i.e., a line with nothing preceding the CRLF) indicating the end of the header fields
   4. Optionally a message-body
     
+    
+   ![Response_Headers](src="https://toolsqa.com/wp-content/gallery/restapi/Response-Status-Line.png")
+   
+   
   
   
 
