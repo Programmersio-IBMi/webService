@@ -29,7 +29,7 @@
 
   ![Rest_API_Architecture](https://idratherbewritingmedia.com/images/api/restapi_www.svg)
     
-  A REST request from the client to the server usually consists of the following components
+ A REST request from the client to the server usually consists of the following components
      
   1. URL Path [https://api.example.com/user]
   1. HTTP Method [GET, PUT, POST, PATCH, DELETE]
@@ -42,11 +42,12 @@
 
   HTTP Response is the packet of information sent by Server to the Client in response to an earlier request made by the client. 
   
-   A response from the server to the client usually consists of the following components
-    1. A Status-line
-    2. Zero or more header (General|Response|Entity) fields followed by CRLF
-    3. An empty line (i.e., a line with nothing preceding the CRLF) indicating the end of the header fields
-    4. Optionally a message-body
+A response from the server to the client usually consists of the following components
+
+  1. A Status-line
+  2. Zero or more header (General|Response|Entity) fields followed by CRLF
+  3. An empty line (i.e., a line with nothing preceding the CRLF) indicating the end of the header fields
+  4. Optionally a message-body
     
   
   
