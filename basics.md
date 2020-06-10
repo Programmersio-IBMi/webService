@@ -30,7 +30,6 @@
   ![Rest_API_Architecture](https://idratherbewritingmedia.com/images/api/restapi_www.svg)
     
   A REST request from the client to the server usually consists of the following components
-  
     ⋅⋅* URL Path [https://api.example.com/user]
     ⋅⋅* HTTP Method [GET, PUT, POST, PATCH, DELETE]
     - Header – (optional) additional information that the client needs to pass along in the request such as Authorization credentials, Content-Type of the body, User-Agent to define what type of application is making the request, and more]
