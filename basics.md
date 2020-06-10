@@ -50,7 +50,7 @@ A response from the server to the client usually consists of the following compo
   4. Optionally a message-body
     
     
-   ![Response_Headers](src="https://toolsqa.com/wp-content/gallery/restapi/Response-Status-Line.png")
+   ![Response_Headers](https://toolsqa.com/wp-content/gallery/restapi/Response-Status-Line.png)
    
    
   
