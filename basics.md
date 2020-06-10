@@ -6,9 +6,9 @@
 **API(Application Programming Interface)** 
 
   A set of definitions and protocols that allow one application to communicate with another application.
-  Mostly we deal with web API's only which are web services only. But there are API's also used wihtout network connection. 
+  Mostly we deal with web APIs only which are web services only. But there are APIs also used wihtout network connection. 
 
-> All web services are API, not all API's are web service.
+> _All web services are API, not all APIs are web service._
 
 
 
