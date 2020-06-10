@@ -1,13 +1,9 @@
 
-**Web Service ** 
-
-<u>
+**Web Service** 
 
   A Web service is a way for two machines to communicate with each other over a `network.`
  
-**API(Application Programming Interface) ** 
-
-<u>
+**API(Application Programming Interface)** 
 
   A set of definitions and protocols that allow one application to communicate with another application.
   Mostly we deal with web API's only which are web services only. But there are API's also used wihtout network connection. 
