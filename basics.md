@@ -48,15 +48,17 @@ A response from the server to the client usually consists of the following compo
   2. Zero or more header (General|Response|Entity) fields followed by CRLF
   3. An empty line (i.e., a line with nothing preceding the CRLF) indicating the end of the header fields
   4. Optionally a message-body
-    
-    
+   
    ![Response_Headers](https://toolsqa.com/wp-content/gallery/restapi/Response-Status-Line.png)
    
+**HTTP Status Codes** 
+----------------
    
+  - 1xx: Informational
+  - 2xx: Success
+  - 3xx: Redirection
+  - 4xx: Client Error
+  - 5xx: Server Error
   
-  
-
-
-
-
-  
+  Detailed information on [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
+ 
