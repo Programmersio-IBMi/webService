@@ -42,10 +42,10 @@
   HTTP Response is the packet of information sent by Server to the Client in response to an earlier request made by the client. 
   
    A response from the server to the client usually consists of the following components:
+   
     - A Status-line
     - Zero or more header (General|Response|Entity) fields followed by CRLF
-    - An empty line (i.e., a line with nothing preceding the CRLF) 
-indicating the end of the header fields
+    - An empty line (i.e., a line with nothing preceding the CRLF) indicating the end of the header fields
     - Optionally a message-body
     
   
