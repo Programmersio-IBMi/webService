@@ -62,3 +62,7 @@ A response from the server to the client usually consists of the following compo
   
   Detailed information on [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
  
+
+***Resource used to gather this information:
+  - https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/
+  - https://rapidapi.com/blog/api-vs-web-service/
