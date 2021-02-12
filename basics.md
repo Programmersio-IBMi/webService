@@ -20,6 +20,8 @@
   
   REST APIs are a standardized architecture for building web APIs using HTTP methods.
 
+  [Read Here](https://www.redhat.com/en/topics/api/what-is-a-rest-api)
+
 **API request** 
 ----------------
   
