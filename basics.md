@@ -63,6 +63,8 @@ A response from the server to the client usually consists of the following compo
   Detailed information on [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
   
   [Begineer level video tutorial](https://www.youtube.com/watch?v=GZvSYJDk-us)
+  
+  [REST API for learning purpose](https://gorest.co.in/) 
  
 ***Resource used to gather this information:***
   - https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/
