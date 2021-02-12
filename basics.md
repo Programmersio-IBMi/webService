@@ -27,7 +27,7 @@
   - Http reruest methods [GET, POST, PUT, DELETE]. Detailed reading from [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) 
   
 
-  ![Rest_API_Architecture](https://idratherbewritingmedia.com/images/api/restapi_www.svg)
+  ![Rest_API_Architecture](https://phppot.com/wp-content/uploads/2015/10/restful-web-services-api-architecture.jpg)
     
  A REST request from the client to the server usually consists of the following components
      
