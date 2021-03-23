@@ -7,5 +7,5 @@
 - [ ]  Json Parsing 
 - [ ]  XML Parsing 
   
-  Bonus - [] WebDev (CGIDEV2)
+Bonus - [ ] WebDev (CGIDEV2)
   
