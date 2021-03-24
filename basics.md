@@ -26,7 +26,7 @@
 ----------------
   
   - An API request allows you to retrieve data from a data source, or to send data. 
-  - Http reruest methods [GET, POST, PUT, DELETE]. Detailed reading from [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) 
+  - Http request methods [GET, POST, PUT, DELETE]. Detailed reading from [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) 
   
 
   ![Rest_API_Architecture](https://phppot.com/wp-content/uploads/2015/10/restful-web-services-api-architecture.jpg)
