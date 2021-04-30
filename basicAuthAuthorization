@@ -1,5 +1,6 @@
  // In this program two copybooks are used, first QUSEC is the system copybook which is used to detect error while write data on web.
  // Second base64_h is scott klement copybook which is used to convert base64 encoded data to ASCII format.
+ // 'SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1' this line should be added to http config file to get HTTP_AUTHORIZATION in our program.
 
 **FREE
         ctl-opt dftActGrp(*no) bndDir('QC2LE':'USRBND');
