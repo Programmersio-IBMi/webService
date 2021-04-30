@@ -5,6 +5,7 @@
 - [ ]  Creating a webserver on IBMi ( theory )
 - [ ]  Creating a webservice ( program - GET )
 - [x]  Creating a webservice ( program - POST )
+- [x]  Basic auth authorization (source)
 - [ ]  Json Parsing 
 - [ ]  XML Parsing 
   
