@@ -21,9 +21,7 @@ D DATA            S           5000A
     DATA = '<h1> Employee Details </h1>'+ CRLF;
     writetoweb(DATA: %len(%trim(DATA)): ErrDs);
 
-    DATA = '<Fname>Yashwant</Fname>'+ CRLF + 
-           '<Lname>Kag</Lname>' + CRLF +
-           '<Mobno>9329532432</Mobno>';
+    DATA = 'Hey Yashwant, Welcome to the web services';
     writetoweb(DATA: %len(%trim(DATA)): ErrDs);
 
     *Inlr = *On;
