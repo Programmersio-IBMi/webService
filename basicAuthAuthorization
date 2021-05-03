@@ -15,7 +15,7 @@
         dcl-s authName char(5000);
         dcl-c CRLF x'0d25';
 
-    ///External Procedure for writing data into browser
+     //External Procedure for writing data into browser
      // ------------------------------------------------------------- //
      // write to web                                                  //
      // ------------------------------------------------------------- //
@@ -25,7 +25,7 @@
           errCode char(8000) options(*varsize);
         end-pr;
 
-    ///Procedure for getting environment variables
+     //Procedure for getting environment variables
      // ------------------------------------------------------------- //
      // get environment                                               //
      // ------------------------------------------------------------- //
@@ -33,7 +33,7 @@
           *n pointer value options(*string);
         end-pr;
         
-    ///Procedure for checking authorization
+     //Procedure for checking authorization
      // ------------------------------------------------------------- //
      // check authorization                                          //
      // ------------------------------------------------------------- //
@@ -54,7 +54,7 @@
           bytesAvail int(10) inz(0) ;
         end-ds;
 
-    ///MAIN PROGRAM
+     //MAIN PROGRAM
 
         reqMethod = %Str(getEnv('REQUEST_METHOD'));
         data = 'Content-type: text/plain' + CRLF + CRLF ;
