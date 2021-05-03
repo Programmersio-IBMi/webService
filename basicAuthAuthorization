@@ -11,10 +11,6 @@
         dcl-s data char(5000);
         dcl-s contentType char(100);
         dcl-s reqMethod char(20);
-        dcl-s rtnBuffer char(4096) inz;
-        dcl-s rtnJsonBuffer char(30000) CCSID(819);
-        dcl-s ebcdicData char(30000) ;
-        dcl-s rtnLen int(10);
         dcl-s errMsg varchar(500)   ;
         dcl-s authName char(5000);
         dcl-c CRLF x'0d25';
@@ -36,39 +32,7 @@
         dcl-pr getEnv pointer extproc('getenv');
           *n pointer value options(*string);
         end-pr;
-
-
-    ///Procedure for reading standard input (payload)
-     // ------------------------------------------------------------- //
-     // read standard input                                           //
-     // ------------------------------------------------------------- //
-        dcl-pr readStdInput extproc('QtmhRdStin');
-          rtnBuffer char(65535) options(*varsize);
-          bufLen int(10) const;
-          rtnLen int(10);
-          qusec like(qusec);
-        end-pr;
-
-    ///Procedure for reading standard input (payload)
-     // ------------------------------------------------------------- //
-     // read standard input for application/json                      //
-     // ------------------------------------------------------------- //
-        dcl-pr readJsonStdInput extproc('QtmhRdStin');
-          rtnBuffer char(65535) options(*varsize) CCSID(819);
-          bufLen int(10) const;
-          rtnLen int(10);
-          qusec like(qusec);
-        end-pr;
-
-    ///Procedure for parsing json data
-     // ------------------------------------------------------------- //
-     // parse data                                                    //
-     // ------------------------------------------------------------- //
-        dcl-pr parseData char(5000);
-          data likeds( userDataDS );
-          buffer char(4096);
-        end-pr;
-
+        
     ///Procedure for checking authorization
      // ------------------------------------------------------------- //
      // check authorization                                          //
@@ -76,7 +40,6 @@
         dcl-pr checkAuth char(5000);
           authName char(5000);
         end-pr;
-
      // ------------------------------------------------------------- //
      // translate: to convert ASCII to EBCDIC                         //
      // ------------------------------------------------------------- //
@@ -85,9 +48,6 @@
           data char(32766) options(*varsize);
           table char(10) const;
         end-pr;
-
-    ///Data Strucures for error check
-        dcl-ds apiError likeds( qusec ) inz;
 
         dcl-ds errDs qualified ;
           bytesProv int(10) inz(0) ;
@@ -106,7 +66,6 @@
         endif;
         
         return;
-
 
 
       // Procedure for checking authorization
