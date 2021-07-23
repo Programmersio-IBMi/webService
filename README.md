@@ -4,7 +4,7 @@ webService on IBMi
 
 1.  [Basics of consuming a webservice](./basics.md)
 2.  Consuming a webservice ( program - GET )
-3.  [IBMi webservice practivce examples](./practice.md)
+3.  [IBMi webservice practice examples](./practice.md)
 4.  [Best practices for an API](https://restfulapi.net/)
 5.  [Introduction to webhook](https://www.getvero.com/resources/webhooks/)
 
