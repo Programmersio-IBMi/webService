@@ -4,7 +4,8 @@
 - [ ]  Consuming a webservice ( program - POST )
 - [ ]  Creating a webserver on IBMi ( theory )
 - [ ]  Creating a webservice ( program - GET )
-- [ ]  Creating a webservice ( program - POST )
+- [x]  Creating a webservice ( program - POST )
+- [x]  Basic auth authorization (source)
 - [ ]  Json Parsing 
 - [ ]  XML Parsing 
   
