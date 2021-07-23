@@ -8,6 +8,3 @@ webService on IBMi
 4.  [IBMi webservice practice examples](./practice.md)
 5.  [Best practices for an API](https://restfulapi.net/)
 6.  [Introduction to webhook](https://www.getvero.com/resources/webhooks/)
-
-
-
