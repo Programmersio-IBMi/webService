@@ -6,8 +6,8 @@
 - [ ]  Creating a webservice ( program - GET )
 - [x]  Creating a webservice ( program - POST )
 - [x]  Basic auth authorization (source)
-- [ ]  Json Parsing 
-- [ ]  XML Parsing 
+- [x]  Json Parsing 
+- [x]  XML Parsing 
   
 ## WebDev 
 - [ ] CGIDEV2
