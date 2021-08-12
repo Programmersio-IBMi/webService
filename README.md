@@ -9,3 +9,9 @@ webService on IBMi - Read the below  topics in sequence.
 5.  [IBMi webservice practice examples](./practice.md)
 6.  [Best practices for an API](https://restfulapi.net/)
 7.  [Introduction to webhook](https://www.getvero.com/resources/webhooks/)
+
+## Appendix 
+
+
+1.  [JSON parsing](./referDocs/Db2-JSON-Features-TRIDEX.pdf)
+2.  [XML parsing](./referDocs/XML Parsing.docx)
