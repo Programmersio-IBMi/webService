@@ -15,4 +15,4 @@ webService on IBMi - Read the below  topics in sequence.
 
 1.  [JSON parsing](./referDocs/Db2-JSON-Features-TRIDEX.pdf)
 2.  [XML parsing](./referDocs/XML-Parsing.docx)
-3.  [webservice architexture](./referDocs/ws-arch.jpg)
+3.  [webservice architecture](./referDocs/ws-arch.jpg)
