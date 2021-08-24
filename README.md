@@ -3,7 +3,7 @@ webService on IBMi - Read the below  topics in sequence.
 
 
 1.  [Basics of consuming a webservice](./basics.md)
-  * [Using Http funcitons](https://www.ibm.com/docs/en/i/7.3?topic=systools-http-function-overview)         
+   * [Using Http funcitons](https://www.ibm.com/docs/en/i/7.3?topic=systools-http-function-overview)         
 3.  [Consuming a webservice ( program - GET )](./src/GetClobV.rpgle)
 4.  [Post webservice boilerplate](https://github.com/GajenderTyagi/rpg-webservice-boilerpolate)
 5.  [Creating a post web service(Source code)](./src/postwebservice)
