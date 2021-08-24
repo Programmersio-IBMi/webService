@@ -3,7 +3,7 @@ webService on IBMi - Read the below  topics in sequence.
 
 
 1.  [Basics of consuming a webservice](./basics.md)
-2.  Consuming a webservice ( program - GET )
+2.  [Consuming a webservice ( program - GET )](./src/GetClobV.rpgle)
 3.  [Post webservice boilerplate](https://github.com/GajenderTyagi/rpg-webservice-boilerpolate)
 4.  [Creating a post web service(Source code)](./src/postwebservice)
 5.  [IBMi webservice practice examples](./practice.md)
