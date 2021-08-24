@@ -7,7 +7,7 @@
     2. [Sckott Klement way](https://www.scottklement.com/httpapi/httpapi_zip.html)
 2. [Consuming a webservice ( program - GET )](./src/GetClobV.rpgle)
 3. [Post webservice boilerplate](https://github.com/GajenderTyagi/rpg-webservice-boilerpolate)
-4. [Creating a post web service(Source code)](./src/postwebservice)
+4. [Creating a post web service(Source code)](./src/postwebservice.rpgle)
 5. [IBMi webservice practice examples](./practice.md)
 6. [Best practices for an API](https://restfulapi.net/)
 7. [Introduction to webhook](https://www.getvero.com/resources/webhooks/)
