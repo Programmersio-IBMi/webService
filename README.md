@@ -19,4 +19,4 @@
 3. [webservice architecture](./referDocs/ws-arch.jpg)
 
 ## Assignment
-1. [Link](./assignment.md)
+1. [Link](./assignments.md)
