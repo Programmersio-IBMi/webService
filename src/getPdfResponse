@@ -1,0 +1,86 @@
+       Ctl-opt option(*srcstmt:*nodebugio) bnddir('YASHWANT');
+       Ctl-opt dftactgrp(*no);
+
+       Dcl-s body Char(200);
+       Dcl-s messageText varchar(32740);
+       Dcl-s messageLength int(5);
+       Dcl-s ResponseMsg SQLTYPE(BLOB_FILE);
+       Dcl-s ResponseHeader Varchar(1000);
+       Dcl-s ReturnedSQLCode char(5);
+       Dcl-s TokenHeader Char(15000);
+       Dcl-s TokenKey char(10000);
+       Dcl-s DocPath Varchar(5000);
+       Dcl-s ErrMessage Varchar(500) ;
+
+       Dcl-c SQL_FILE_OVERWRITE const(16);
+       Dcl-c Pass const('PASS');
+       Dcl-c Rcd const('Record Not Found');
+       Dcl-c Url const('https://api.easypdfcloud.com/v1/workflows/+
+                      00000000048585C1/jobs');
+       //***********************************************************************
+       // MainLine
+       //***********************************************************************
+         *inlr = *on;
+
+         exec sql set option commit = *none;
+
+         SetRequest();
+         ProcessApi();
+
+       //***********************************************************************
+       // SetRequest - Set the web service variables
+       //***********************************************************************
+         dcl-proc SetRequest;
+
+            TokenKey = 'Bearer ' + 'abcdexxkaandaoiweqeqewqwgvsdfsf';
+
+            header = '<httpHeader>'                                   +
+                     '<header name="Authorization" value="'           +
+                          %trim(TokenKey) + '">'                      +
+                     '</header>'                                      +
+                     '<header name="Accept" value="application/pdf">' +
+                     '</header>'                                      +
+                     '</httpHeader>';
+
+         end-proc;
+       //***********************************************************************
+       // ProcessApi - Send Post Request And Fetch Data
+       //***********************************************************************
+         Dcl-proc ProcessApi;
+           Exec sql CALL QSYS2.QCMDEXC('CHGJOB CCSID(37)');
+
+           responseMsg_fo = SQL_FILE_OVERWRITE;
+           responseMsg_name =   '/home/yash/file.pdf';
+           responseMsg_nl =   %len(%trimr(responseMsg_name));
+           
+           // Returned responseMsg will be in BLOB type
+           // Once we get successful response, pdf file will be created 
+           //+ automatically on the ifs path (responseMsg_name)
+           Exec sql
+             Select ResponseMsg,
+                    //CAST(ResponseMsg AS varChar(20000) CCSID 1208),
+                    Varchar(ResponseHttpHeader,1000)
+                                                     into :ResponseMsg,
+                                                          :ResponseHeader
+             From Table(Systools.HttpGetBlobVerbose(Trim(:Url),
+                                                    Trim(:TokenHeader)))
+                                                     as InternalServices;
+
+           diagnostics(sqlDiagnosticDs);
+           if ReturnedSqlCode = *Blanks;
+             // Pdf created on ifs path location (responseMsg_name)
+           endIf;
+
+         End-proc;
+       //***********************************************************************
+       // Diagnostics - get sql details
+       //***********************************************************************
+         Dcl-proc Diagnostics ;
+
+           Exec sql GET DIAGNOSTICS CONDITION 1
+             :ReturnedSqlCode = DB2_RETURNED_SQLCODE,
+             :MessageLength = MESSAGE_LENGTH,
+             :MessageText = MESSAGE_TEXT;
+
+         End-proc ;
+
