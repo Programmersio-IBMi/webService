@@ -30,7 +30,7 @@
        //***********************************************************************
        // SetRequest - Set the web service variables
        //***********************************************************************
-         dcl-proc SetRequest;
+         Dcl-proc SetRequest;
 
             TokenKey = 'Bearer ' + 'abcdexxkaandaoiweqeqewqwgvsdfsf';
 
@@ -42,7 +42,7 @@
                      '</header>'                                      +
                      '</httpHeader>';
 
-         end-proc;
+         End-proc;
        //***********************************************************************
        // ProcessApi - Send Post Request And Fetch Data
        //***********************************************************************
@@ -58,7 +58,6 @@
            //+ automatically on the ifs path (responseMsg_name)
            Exec sql
              Select ResponseMsg,
-                    //CAST(ResponseMsg AS varChar(20000) CCSID 1208),
                     Varchar(ResponseHttpHeader,1000)
                                                      into :ResponseMsg,
                                                           :ResponseHeader
@@ -66,10 +65,10 @@
                                                     Trim(:TokenHeader)))
                                                      as InternalServices;
 
-           diagnostics(sqlDiagnosticDs);
-           if ReturnedSqlCode = *Blanks;
+           Diagnostics();
+           If ReturnedSqlCode = *Blanks;
              // Pdf created on ifs path location (responseMsg_name)
-           endIf;
+           EndIf;
 
          End-proc;
        //***********************************************************************
