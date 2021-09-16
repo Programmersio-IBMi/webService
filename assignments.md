@@ -5,5 +5,12 @@
 
 ### Assignment 2
 
-> TBD
+  1.  Create a webserver on the IBMi
+  2.  Create a program to handle GET request.
+  3.   Create a program to handle POST request.
+
+### Assignment 3 (optional)
+
+  1.  Create a CGIDEV2 project.
+
 
