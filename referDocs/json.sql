@@ -1,3 +1,28 @@
+--  BSON AND JSON 
+set  gajender.aaa = '{"empno" :"12345", "name": "Random", "pay": {"salary": 12345}}' ;
+set schema gajender;
+
+drop table t1;
+
+create table t1 (c1 varchar(300));
+
+create table t1 (c1 BLOB(512) INLINE LENGTH 512);
+
+INSERT INTO t1 VALUES ( '{"empno" :"12345", "name": "Random", "pay": {"salary": 12345}}' );
+
+INSERT INTO t1 VALUES ( JSON_TO_BSON('{"empno" :"12345", "name": "Random", "pay": {"salary": 12345}}' ));
+
+CREATE VARIABLE BSONVAR VARBINARY(2000);
+
+SELECT BSON_TO_JSON(C1)  FROM T1 ;
+
+SELECT C1 FROM T1 ;
+
+SET BSONVAR = 'SELECT C1 FROM T1';
+
+
+--
+
 drop variable gajender.jsonData ;
 
 create variable gajender.jsonData varchar(10000);
